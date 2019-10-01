@@ -169,6 +169,7 @@ toolchain_table = [
     Toolchain('android-ndk-r17-api-19-armeabi-v7a-neon-clang-libcxx', 'Unix Makefiles'),
     Toolchain('android-ndk-r18-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r18b-api-24-arm64-v8a-clang-libcxx11', 'Unix Makefiles'),
+    Toolchain('android-ndk-r18b-api-28-arm64-v8a-clang-libcxx11', 'Unix Makefiles'),
     Toolchain('android-ndk-r18b-api-16-armeabi-v7a-clang-libcxx', 'Unix Makefiles'),
     Toolchain('android-ndk-r18b-api-21-arm64-v8a-clang-libcxx', 'Unix Makefiles'),
     Toolchain('android-ndk-r18b-api-21-armeabi-v7a-clang-libcxx', 'Unix Makefiles'),
@@ -507,12 +508,14 @@ if platform.system() == 'Linux':
 if platform.system() == 'Darwin':
   toolchain_table += [
       Toolchain('ios', 'Xcode'),
+      Toolchain('ios-12-3-dep-9-3-arm64', 'Xcode', ios_version='12.3'),
       Toolchain('ios-12-2-dep-9-3-arm64', 'Xcode', ios_version='12.2'),
       Toolchain('ios-12-1-dep-9-0-device-bitcode-cxx14', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-1-dep-9-0-device-bitcode-cxx17', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-0-dep-11-0-arm64', 'Xcode', ios_version='12.0'),
       Toolchain('ios-12-1-dep-11-0-arm64', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-1-dep-12-0-arm64-cxx17', 'Xcode', ios_version='12.1'),
+      Toolchain('ios-12-1-dep-9-3-arm64-bitcode', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-1-dep-9-3-arm64', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-1-dep-9-3-armv7', 'Xcode', ios_version='12.1'),
       Toolchain('ios-12-1-dep-9-3', 'Xcode', ios_version='12.1'),
@@ -723,6 +726,11 @@ if platform.system() == 'Darwin':
       Toolchain('osx-10-14-dep-10-12-cxx17', 'Xcode', osx_version='10.14'),
       Toolchain('osx-10-14-cxx14', 'Xcode', osx_version='10.14'),
       Toolchain('osx-10-14-cxx17', 'Xcode', osx_version='10.14'),
+      Toolchain('osx-10-15', 'Xcode', osx_version='10.15'),
+      Toolchain('osx-10-15-dep-10-10', 'Xcode', osx_version='10.15'),
+      Toolchain('osx-10-15-dep-10-10-cxx14', 'Xcode', osx_version='10.15'),
+      Toolchain('osx-10-15-dep-10-10-cxx17', 'Xcode', osx_version='10.15'),
+      Toolchain('osx-10-15-dep-10-12-cxx17', 'Xcode', osx_version='10.15'),
       Toolchain('linux-gcc-x64', 'Unix Makefiles'),
   ]
 
