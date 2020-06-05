@@ -831,6 +831,7 @@ if os.name == 'posix':
       Toolchain('gcc-8-cxx14-fpic', 'Unix Makefiles'),
       Toolchain('gcc-8-cxx17', 'Unix Makefiles'),
       Toolchain('gcc-8-cxx17-fpic', 'Unix Makefiles'),
+      Toolchain('gcc-8-cxx17-gnu-fpic', 'Unix Makefiles'),
       Toolchain('gcc-8-cxx17-concepts', 'Unix Makefiles'),
       Toolchain('gcc-cxx98', 'Unix Makefiles'),
       Toolchain('gcc-lto', 'Unix Makefiles'),
