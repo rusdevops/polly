@@ -332,6 +332,12 @@ if os.name == 'nt':
           vs_version='14'
       ),
       Toolchain(
+          'vs-14-2015-win64-sdk-8-1-cxx17',
+          'Visual Studio 14 2015 Win64',
+          arch='amd64',
+          vs_version='14'
+      ),
+      Toolchain(
           'vs-11-2012-arm',
           'Visual Studio 11 2012 ARM',
           vs_version='11'
@@ -910,6 +916,14 @@ if os.name == 'posix':
       Toolchain('gcc-8-cxx17-fpic', 'Unix Makefiles'),
       Toolchain('gcc-8-cxx17-gnu-fpic', 'Unix Makefiles'),
       Toolchain('gcc-8-cxx17-concepts', 'Unix Makefiles'),
+      Toolchain('gcc-9', 'Unix Makefiles'),
+      Toolchain('gcc-9-cxx17', 'Unix Makefiles'),
+      Toolchain('gcc-9-cxx17-fpic', 'Unix Makefiles'),
+      Toolchain('gcc-9-cxx17-gnu-fpic', 'Unix Makefiles'),
+      Toolchain('gcc-10', 'Unix Makefiles'),
+      Toolchain('gcc-10-cxx17', 'Unix Makefiles'),
+      Toolchain('gcc-10-cxx17-fpic', 'Unix Makefiles'),
+      Toolchain('gcc-10-cxx17-gnu-fpic', 'Unix Makefiles'),
       Toolchain('gcc-cxx98', 'Unix Makefiles'),
       Toolchain('gcc-lto', 'Unix Makefiles'),
       Toolchain('libcxx', 'Unix Makefiles'),
@@ -930,6 +944,8 @@ if os.name == 'posix':
       Toolchain('openbsd-egcc-cxx11-static-std', 'Unix Makefiles'),
       Toolchain('ninja-gcc-7-cxx17-concepts', 'Ninja'),
       Toolchain('ninja-gcc-8-cxx17-concepts', 'Ninja'),
+      Toolchain('ninja-clang-cxx17-fpic', 'Ninja'),
+      Toolchain('ninja-gcc-cxx17-fpic', 'Ninja'),
   ]
 
 def get_by_name(name):
